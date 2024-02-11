@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-strike {
+            font-family: 'Protest Strike', sans-serif;
+        }
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mx-auto mt-7 md:mt-14 lg:mt-28 font-roboto px-5">
+        <h1 class="text-center text-3xl lg:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-lime-500 p-2 mb-6 md:mb-12 lg:mb-24">Digital Tasbih</h1>
+        <!-- counter conatiner -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 mb-6 md:mb-8 lg:mb-12">
+            <!-- column 1 -->
+            <div class="text-center space-y-4 lg:space-y-8 shadow-2xl py-5 md:py-10 rounded-2xl">
+                <h3 class="text-2xl font-medium">Subhan Allah</h3>
+                <h3 class="text-4xl opacity-70" id="subhanAllahCount">0</h3>
+                <!-- button container -->
+                <div class="flex items-center md:justify-center flex-col md:flex-row gap-4 text-center">
+                    <button class="py-4 px-8 bg-green-500 rounded-xl max-w-max text-white font-medium" id="subhanAllahIncriment">INCRIMENT</button>
+                    <button class="py-4 px-8 bg-red-500 rounded-xl max-w-max text-white font-medium" id="subhanAllahDecriment">DECRIMENT</button>
+                </div>
+            </div>
+            <!-- column 2 -->
+            <div class="text-center space-y-4 lg:space-y-8 shadow-2xl py-5 md:py-10 rounded-2xl">
+                <h3 class="text-2xl font-medium">Alhamdulilah</h3>
+                <h3 class="text-4xl opacity-70" id="alhamdulilahCount">0</h3>
+                <!-- button container -->
+                <div class="flex items-center md:justify-center flex-col md:flex-row gap-4 text-center">
+                    <button class="py-4 px-8 bg-green-500 rounded-xl max-w-max text-white font-medium" id="alhamdulilahIncriment">INCRIMENT</button>
+                    <button class="py-4 px-8 bg-red-500 rounded-xl max-w-max text-white font-medium" id="alhamdulilahDecriment">DECRIMENT</button>
+                </div>
+            </div>
+            <!-- column 3 -->
+            <div class="text-center space-y-4 lg:space-y-8 shadow-2xl py-5 md:py-10 rounded-2xl">
+                <h3 class="text-2xl font-medium">Allahuakber</h3>
+                <h3 class="text-4xl opacity-70" id="allahuakberCount">0</h3>
+                <!-- button container -->
+                <div class="flex items-center md:justify-center flex-col md:flex-row gap-4 text-center">
+                    <button class="py-4 px-8 bg-green-500 rounded-xl max-w-max text-white font-medium" id="allahuakberIncriment">INCRIMENT</button>
+                    <button class="py-4 px-8 bg-red-500 rounded-xl max-w-max text-white font-medium" id="allahuakberDecriment">DECRIMENT</button>
+                </div>
+            </div>
+        </div>
+        <!-- reset button conatiner -->
+        <div class="text-center">
+            <button class="px-8 py-4 bg-amber-500 text-white font-medium rounded-xl" id="btn-reset">RESET ALL TASBIH</button>
+        </div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
